@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import {Button} from '@mui/material';
+
+function clickAlert() {
+  alert("you clicked the other button!");
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="App">
+        <h1> Hello World :D</h1>
+        <Button variant="outlined" 
+          onClick={() => {
+            alert('you clicked me!');
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          click me
+        </Button>
+      </div>
+      <div>
+        <Button variant="contained" onClick={clickAlert}>
+          click me too!
+        </Button>
+      </div>
+    </>
   );
 }
 
 export default App;
+
