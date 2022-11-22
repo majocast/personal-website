@@ -1,29 +1,25 @@
 import React, { useState } from 'react';
 import './App.css';
-import {Button} from '@mui/material';
 
-function clickAlert() {
-  alert("you clicked the other button!");
-}
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
     <>
-      <div className="App">
-        <h1> Hello World :D</h1>
-        <Button variant="outlined" 
-          onClick={() => {
-            alert('you clicked me!');
-          }}
-        >
-          click me
-        </Button>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
-      <div>
-        <Button variant="contained" onClick={clickAlert}>
-          click me too!
-        </Button>
-      </div>
+      
+      
     </>
   );
 }
