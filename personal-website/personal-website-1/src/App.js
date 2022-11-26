@@ -13,6 +13,7 @@ function App() {
       <Navbar />
       <section id="home" className="container">
         <Home />
+        
       </section> 
       <section id="about" className="container">
         <About />

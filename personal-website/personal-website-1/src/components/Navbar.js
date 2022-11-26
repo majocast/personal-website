@@ -1,10 +1,19 @@
 import { Link } from "react-scroll"
 import { useRef } from 'react'
+import styles from "../css/styles.css";
 
 export default function Navbar() {
+
+
+    const linkStyle = {
+        textDecoration: "none",
+        color: 'white',
+        cursor: 'pointer'
+    };
+
     return (
         <nav className="nav">
-            <Link className="site-title" smooth spy to="home">Marc Castro</Link>
+            <Link style={linkStyle} className="site-title" smooth spy to="home">Marc Castro</Link>
             <ul>
                 <li>
                     <Link activeClass="active" smooth spy to="about">
