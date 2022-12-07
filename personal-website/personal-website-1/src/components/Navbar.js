@@ -1,19 +1,21 @@
-import { Link } from "react-scroll"
-import { useRef } from 'react'
-import styles from "../css/styles.css";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
 
+    
 
-    const linkStyle = {
-        textDecoration: "none",
-        color: 'white',
-        cursor: 'pointer'
-    };
+    /*window.onscroll = function() {
+        if(window.pageYOffset > 20) {
+            document.querySelector(".site-title").className = "site-title title-hidden";
+        } else {
+            document.querySelector(".site-title").className = "site-title";
+        }
+    };*/
+    
 
     return (
         <nav className="nav">
-            <Link style={linkStyle} className="site-title" smooth spy to="home">Marc Castro</Link>
+            <Link className="site-title" smooth spy to="home">Marc Castro</Link>
             <ul>
                 <li>
                     <Link activeClass="active" smooth spy to="about">
