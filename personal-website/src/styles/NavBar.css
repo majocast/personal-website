@@ -1,0 +1,18 @@
+.nav-contents {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-contents li {
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.nav-contents li:nth-child(2) {
+    display: block;
+}
+
+.nav-contents li:nth-child(2) {
+    
+}
