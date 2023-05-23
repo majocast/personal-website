@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import styled from 'styled-components';
-import { Link as ScrollLink, animateScroll } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import '../styles/NavBar.css';
 
 const StyledNav = styled.nav`
@@ -12,9 +12,28 @@ const StyledNav = styled.nav`
 `;
 
 function NavBar() {
-  const scrollToTop = () => {
-    animateScroll.scrollToTop();
-  }
+  useEffect(() => {
+    const ScrollHandler = () => {
+      const scrollPosition = window.scrollY;
+      console.log("currentScroll: " + scrollPosition);
+      const scrollThreshold = 50;
+    
+      const hiddenLIElement = document.querySelector('.hidden-li') as HTMLElement | null;
+    
+      if(hiddenLIElement && scrollPosition > scrollThreshold) {
+        hiddenLIElement?.classList.add('hide');
+      } else {
+        hiddenLIElement?.classList.remove('hide');
+      }
+    };
+
+    window.addEventListener('scroll', ScrollHandler);
+
+    return () => {
+      window.removeEventListener('scroll', ScrollHandler);
+    };
+  }, []);
+
   return (
     <StyledNav>
       <ul className='nav-contents'>
@@ -24,7 +43,7 @@ function NavBar() {
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink to='home' smooth={true} onClick={scrollToTop}>
+          <ScrollLink className='hidden-li' to='home' smooth={true}>
             Home
           </ScrollLink>
         </li>

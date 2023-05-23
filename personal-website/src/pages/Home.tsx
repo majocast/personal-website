@@ -11,13 +11,20 @@ const Wrapper = styled.div`
     height: 100vh;
 `;
 
+
 function Home() {
   return (
     <Wrapper id='home'>
-      <h1>Home</h1>
-      <p>Welcome to home page!</p>
-      <div id='profile-picture'>
-        
+      <div className='section'>
+        <p>Welcome to home page!</p>
+      </div>
+      <div className='section'>
+        <div id='profile-picture'>
+
+        </div>
+      </div>
+      <div className='section'>
+
       </div>
     </Wrapper>
   );

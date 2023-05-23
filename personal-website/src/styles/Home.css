@@ -1,6 +1,14 @@
-#profile-picture{
+#home .section {
     display: flex;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 100%;
+    height: 33%;
+    justify-content: space-evenly;
+}
+
+#profile-picture {
+    --radius: 33%;
+    width: var(--radius);
+    height: 100%;
+    border-radius: 100%;
+    border: 2px solid black;
 }
