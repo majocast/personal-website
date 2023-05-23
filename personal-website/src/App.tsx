@@ -10,7 +10,6 @@ function App() {
   return (
       <Router>
         <NavBar />
-
         <div className='pages'>
           <Home/>
           <About />

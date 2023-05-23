@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import '../styles/Pages.css';
 import '../styles/Home.css';
@@ -13,6 +13,27 @@ const Wrapper = styled.div`
 
 
 function Home() {
+  useEffect(() => {
+    const ScrollHandler = () => {
+      const scrollPosition = window.scrollY;
+      console.log("currentScroll: " + scrollPosition);
+      const scrollThreshold = 50;
+    
+      const hiddenLIElement = document.querySelector('#profile-picture') as HTMLElement | null;
+    
+      if(hiddenLIElement && scrollPosition > scrollThreshold) {
+        hiddenLIElement?.classList.add('expand');
+      } else {
+        hiddenLIElement?.classList.remove('expand');
+      }
+    };
+
+    window.addEventListener('scroll', ScrollHandler);
+
+    return () => {
+      window.removeEventListener('scroll', ScrollHandler);
+    };
+  }, []);
   return (
     <Wrapper id='home'>
       <div className='section'>

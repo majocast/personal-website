@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll';
 import '../styles/NavBar.css';
@@ -8,7 +8,9 @@ const StyledNav = styled.nav`
     width: 100%;
     color: white;
     background-color: black;
-    padding-top: 5px;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
 `;
 
 function NavBar() {
@@ -16,14 +18,30 @@ function NavBar() {
     const ScrollHandler = () => {
       const scrollPosition = window.scrollY;
       console.log("currentScroll: " + scrollPosition);
-      const scrollThreshold = 50;
+      const scrollThreshold = 500;
     
-      const hiddenLIElement = document.querySelector('.hidden-li') as HTMLElement | null;
+      const hiddenHomeLI = document.querySelector('#home-li') as HTMLElement | null;
+      const hiddenAboutLI = document.querySelector('#about-li') as HTMLElement | null;
+      const hiddenProjectsLI = document.querySelector('#projects-li') as HTMLElement | null;
     
-      if(hiddenLIElement && scrollPosition > scrollThreshold) {
-        hiddenLIElement?.classList.add('hide');
+      if(hiddenHomeLI && scrollPosition > scrollThreshold) {
+        hiddenHomeLI?.classList.add('show');
       } else {
-        hiddenLIElement?.classList.remove('hide');
+        hiddenHomeLI?.classList.remove('show');
+      }
+
+      //500 - 1000
+      if(hiddenAboutLI && (scrollPosition < scrollThreshold * 1.5 || scrollPosition > scrollThreshold * 3)) {
+        hiddenAboutLI?.classList.add('show');
+      } else {
+        hiddenAboutLI?.classList.remove('show');
+      }
+
+      // greater than 1000
+      if(hiddenProjectsLI && scrollPosition < scrollThreshold * 3) {
+        hiddenProjectsLI?.classList.add('show');
+      } else {
+        hiddenProjectsLI?.classList.remove('show');
       }
     };
 
@@ -36,23 +54,25 @@ function NavBar() {
 
   return (
     <StyledNav>
-      <ul className='nav-contents'>
-        <li>
+      <div className='container'>
+        <ul className='nav-contents'>
           <ScrollLink to='about' smooth={true}>
-            About
+            <li id='about-li'>
+              About
+            </li>
           </ScrollLink>
-        </li>
-        <li>
-          <ScrollLink className='hidden-li' to='home' smooth={true}>
-            Home
+          <ScrollLink to='home' smooth={true}>
+            <li id='home-li'>
+              Home
+            </li>
           </ScrollLink>
-        </li>
-        <li>
           <ScrollLink to='projects' smooth={true}>
-            Projects
+            <li id='projects-li'>
+              Projects
+            </li>
           </ScrollLink>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </StyledNav>
   );
 }

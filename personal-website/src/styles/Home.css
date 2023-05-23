@@ -6,9 +6,13 @@
 }
 
 #profile-picture {
-    --radius: 33%;
-    width: var(--radius);
+    width: 33%;
     height: 100%;
     border-radius: 100%;
     border: 2px solid black;
+    transition: width 1s ease;
+}
+
+#profile-picture.expand {
+    width: 0;
 }
