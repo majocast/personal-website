@@ -17,7 +17,7 @@ function Home() {
     const ScrollHandler = () => {
       const scrollPosition = window.scrollY;
       console.log("currentScroll: " + scrollPosition);
-      const scrollThreshold = 50;
+      const scrollThreshold = 400;
     
       const hiddenLIElement = document.querySelector('#profile-picture') as HTMLElement | null;
     
