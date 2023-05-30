@@ -1,20 +1,36 @@
-#home .section {
-    display: flex;
-    width: 100%;
-    height: 33%;
-    justify-content: space-evenly;
+@media screen and (min-width: 768px) {
+  
 }
 
 #profile-picture {
-    width: 33%;
-    height: 100%;
-    max-width: 19rem;
-    max-height: 19rem;
-    border-radius: 100%;
-    border: 2px solid black;
-    transition: width 1s ease;
+  height: 50%;
+  width: 20%;
+  border: 5px solid blue;
+  background-color: blue;
 }
 
-#profile-picture.expand {
-    width: 0;
+#mid-text {
+  width: 50%;
+  height: 33%;
+  border: 2px solid black;
+  background-color: black;
 }
+
+@media screen and (max-width: 767px) {
+  #profile-picture {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 100%;
+    border: 5px solid blue;
+    background-color: blue;
+    z-index: 2;
+  }
+  
+  #mid-text {
+    width: 50%;
+    height: 33%;
+    border: 2px solid black;
+    background-color: black;
+  }
+}
+

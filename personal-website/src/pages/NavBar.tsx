@@ -12,6 +12,7 @@ const StyledNav = styled.nav`
     padding: 0;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
 `;
 
 function NavBar() {

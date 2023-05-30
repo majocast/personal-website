@@ -1,14 +1,24 @@
 import React, {useEffect} from 'react';
+import Avatar from '@mui/material/Avatar';
 import styled from 'styled-components';
 import '../styles/Pages.css';
 import '../styles/Home.css';
 
 const Wrapper = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+
+  @media screen and (max-width: 800px) {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    border: 5px solid black;
+    flex-direction: column;
+  }
 `;
 
 
@@ -36,17 +46,12 @@ function Home() {
   }, []);
   return (
     <Wrapper id='home'>
-      <div className='section'>
-        <p>Welcome to home page!</p>
-      </div>
-      <div className='section'>
-        <div id='profile-picture'>
+        <div id='mid-text'>
 
         </div>
-      </div>
-      <div className='section'>
-
-      </div>
+        <div id='profile-picture'>
+    
+        </div>
     </Wrapper>
   );
 }
