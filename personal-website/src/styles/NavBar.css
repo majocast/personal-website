@@ -1,10 +1,10 @@
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-contents {
-  min-height: 50px;
+  min-height: 15%;
   padding: 0;
   list-style: none;
   display: flex;
@@ -13,14 +13,20 @@
 
 .nav-contents li {
   display: flex;
+  font-size: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 50px;
-  margin: 0 10px;
-  border: 2px solid white;
-  transition: width 1s ease;
+  min-height: 100%;
+  margin: 0 0;
+  border-top: 2px solid goldenrod;
+  border-bottom: 2px solid goldenrod;
+  transition: width 1s ease, background-color 1s ease;
   cursor: pointer;
+}
+
+.nav-contents li:hover {
+  background-color: goldenrod;
 }
 
 #about-li {
@@ -33,8 +39,7 @@
     opacity: 0;
     width: 0;
     height: 0;
-    border-radius: 100%;
-    transition: opacity 0.3s ease, height 1s ease, width 1s ease, display 0s 1s;
+    transition: opacity 1s ease, height 1s ease, width 1s ease, display 0s 1s;
   }
   
   #home-li.show {
@@ -43,8 +48,9 @@
     align-items: center;
     text-align: center;
     opacity: 1;
-    width: 7vw;
-    height: 7vw;
+    width: 40px;
+    height: 40px;
+    border: 2px solid goldenrod;
   }
 }
 
@@ -54,7 +60,7 @@
     width: 0;
     height: 0;
     border-radius: 100%;
-    transition: opacity 0.3s ease, height 1s ease, width 1s ease, display 0s 1s;
+    transition: opacity 1s ease, height 1s ease, width 1s ease, display 0s 1s;
   }
   
   #home-li.show {
@@ -71,20 +77,6 @@
 #projects-li {
   width: 30vw;
   display: block;
-}
-
-#avatar {
-  width: 100%;
-  height: 100%;
-}
-
-@keyframes shrinkIn {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%
-  }
 }
 
 @media screen and (max-width: 767px) {

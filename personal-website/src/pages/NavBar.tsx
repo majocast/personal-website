@@ -12,7 +12,7 @@ const StyledNav = styled.nav`
     padding: 0;
     flex-direction: column;
     align-items: center;
-    z-index: 5;
+    z-index: 10;
 `;
 
 function NavBar() {
@@ -49,7 +49,7 @@ function NavBar() {
           </ScrollLink>
           <ScrollLink to='home' smooth={true}>
             <li id='home-li'>
-              <Avatar id='avatar' alt='Marc Castro' src='' />
+              
             </li>
           </ScrollLink>
           <ScrollLink to='projects' smooth={true}>

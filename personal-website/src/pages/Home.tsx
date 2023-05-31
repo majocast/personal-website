@@ -9,14 +9,14 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid black;
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 5%);
+  mask-image: linear-gradient(to top, transparent 1%, black 5%);
 
   @media screen and (max-width: 800px) {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid black;
     flex-direction: column;
   }
 `;
@@ -46,11 +46,12 @@ function Home() {
   }, []);
   return (
     <Wrapper id='home'>
-        <div id='mid-text'>
-
-        </div>
+        <div id='background-container'></div>
         <div id='profile-picture'>
-    
+          <div id='photo-container'></div>
+        </div>
+        <div id='mid-text'>
+          <h1>Marc Castro</h1>
         </div>
     </Wrapper>
   );
