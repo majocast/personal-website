@@ -19,6 +19,7 @@
   text-align: center;
   min-height: 100%;
   margin: 0 0;
+  color: whitesmoke;
   border-top: 2px solid goldenrod;
   border-bottom: 2px solid goldenrod;
   transition: width 1s ease, background-color 1s ease;
@@ -27,6 +28,7 @@
 
 .nav-contents li:hover {
   background-color: goldenrod;
+  color: black;
 }
 
 #about-li {

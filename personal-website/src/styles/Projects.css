@@ -1,0 +1,28 @@
+#projects-header {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+#projects-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed white;
+}
+
+.project {
+  position: relative;
+  width: 80%;
+  height: 10rem;
+  margin-bottom: 10px;
+  border: 2px dashed goldenrod;
+}
