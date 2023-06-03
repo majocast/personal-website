@@ -8,13 +8,14 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: 100vh;
+    border: 2px solid white;
 `;
 
 function About() {
   return (
     <Wrapper id='about'>
-      <h1>About</h1>
-      <p>Welcome to about page!</p>
+      <div className='column'></div>
+      <div className='column'></div>
     </Wrapper>
   );
 }

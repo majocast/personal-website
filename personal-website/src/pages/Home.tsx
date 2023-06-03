@@ -53,7 +53,7 @@ function Home() {
         <div id='mid-text'>
           <h1>Marc Castro</h1>
           <h2>UX/UI Designer & Developer</h2>
-          <p>Loren Ipsum yadadadadada</p>
+          <p>Welcome to my portfolio.</p>
         </div>
     </Wrapper>
   );
