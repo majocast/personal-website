@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import '../styles/Projects.css';
 
 const Wrapper = styled.div`
-  border-top: 2px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  border-top: 2px solid white;
 `;
 
 function Projects() {

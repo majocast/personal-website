@@ -1,4 +1,18 @@
+.about-container {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .column {
   flex-basis: 50%;
-  height: 100vh;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+
