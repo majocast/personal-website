@@ -30,9 +30,32 @@
 #about-nav {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center left;
 }
 
-#about-nav div {
-  display: inline-block;
-  height: 20%;
+#about-nav span {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 35%;
+  transition: 0.5s ease-in-out;
+}
+
+#about-nav .active {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+#about-nav span:hover {
+  font-size: 2.5rem;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+.display-cont div {
+  animation: fadeIn 1s;
 }
