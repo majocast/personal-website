@@ -7,24 +7,14 @@
   align-items: center;
 }
 
+.about-container div:first-child {
+  flex-basis: 25%;
+}
+
 .about-container div {
-  flex-basis: 45%;
+  flex-basis: 55%;
   height: 90vh;
   border: 2px solid goldenrod;
-}
-
-#about-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.display-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 #about-nav {
@@ -32,23 +22,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center left;
+  color: lightgray;
 }
 
 #about-nav span {
+  text-transform: uppercase;
   cursor: pointer;
   font-size: 2rem;
-  margin-left: 35%;
-  transition: 0.5s ease-in-out;
+  margin-left: 15%;
+  transition: 0.2s ease-in-out;
 }
 
 #about-nav .active {
   color: goldenrod;
-  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+#about-nav span:not(.active):hover {
   font-size: 2.5rem;
 }
 
-#about-nav span:hover {
-  font-size: 2.5rem;
+#about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -56,6 +53,23 @@
   to {opacity: 100%;}
 }
 
-.display-cont div {
+#about-content div {
+  width: 95%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  font-size: large;
+  color: lightgray;
   animation: fadeIn 1s;
+}
+
+#about-cont {
+  font-weight: 400;
+  min-height: 100%;
+  justify-content: center;
+}
+
+#experience-cont div {
+  border: 2px solid blue;
 }

@@ -1,11 +1,6 @@
 /*
 Main Page CSS
 */
-
-#home {
-  
-}
-
 #home::before {
   content: "";
   position: absolute;
@@ -50,9 +45,13 @@ Home Screen Text CSS (Right Side)
 */
 
 #mid-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 25px;
+  align-items: left;
   /*background-color: rgba(255, 255, 255, 0.5);*/
-  color: whitesmoke;
+  color: lightgrey;
 }
 
 #mid-text h1 {

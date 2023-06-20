@@ -8,10 +8,11 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
 `;
 
 type DivId = 'about' | 'experience' | '';
-const originalHTML: string[] = ['about', 'experience']; 
 
 function About() {
   const [clickedDiv, setClickedDiv] = useState<DivId>('about');
@@ -55,10 +56,27 @@ function About() {
           <span onClick={(e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => clickHandler(e, 'experience')}>experience</span>
         </div>
         <div id='about-content'>
-          <div className='display-cont'>
-            {(clickedDiv === 'about' || clickedDiv === '') && <div id='about-cont'>About Content</div>}
-            {clickedDiv === 'experience' && <div id='experience-cont'>Experience Content</div>}
-          </div>
+          {(clickedDiv === 'about' || clickedDiv === '') && <div id='about-cont'>
+            Back at the end of the 2018 Fall Semester, just before submitting college admissions
+            applications, I switched my major from Aerospace Engineering to Computer Science. Now
+            in 2023, I have the honor and privelege to declare myself a Bachelor of 
+            Science, Computer Science, as well as had the opportunity to work with and learn from
+            industry professionals in seminar, team, and individual settings.
+            <br/><br/>
+            When not at the computer, I'm usually playing basketball, hanging out with friends, weight
+            lifting, dabbling in film photography, or building a Gundam.
+          </div>}
+          {clickedDiv === 'experience' && <div id='experience-cont'>
+            <div>
+              one
+            </div>
+            <div>
+              two
+            </div>
+            <div>
+              three
+            </div>
+          </div>}
         </div>
       </div>
     </Wrapper>

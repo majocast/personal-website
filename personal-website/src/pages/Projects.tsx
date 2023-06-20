@@ -14,7 +14,7 @@ function Projects() {
   return (
     <Wrapper id='projects'>
       <div id='projects-header'>
-        <h1>Projects</h1>
+        <h1>PROJECTS</h1>
       </div>
       <div id='projects-container'>
         <div className='column'>

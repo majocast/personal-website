@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
     position: fixed;
     width: 100%;
     color: white;
-    background-color: black;
+    background-color: #0d0d0d;
     padding: 0;
     flex-direction: column;
     align-items: center;
@@ -44,17 +44,17 @@ function NavBar() {
         <ul className='nav-contents'>
           <ScrollLink to='about' smooth={true}>
             <li id='about-li'>
-              About
+              ABOUT
             </li>
           </ScrollLink>
           <ScrollLink to='home' smooth={true}>
             <li id='home-li'>
-              
+              HOME
             </li>
           </ScrollLink>
           <ScrollLink to='projects' smooth={true}>
             <li id='projects-li'>
-              Projects
+              PROJECTS
             </li>
           </ScrollLink>
         </ul>

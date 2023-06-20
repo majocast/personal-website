@@ -46,15 +46,14 @@ function Home() {
   }, []);
   return (
     <Wrapper id='home'>
-        <div id='background-container'></div>
-        <div id='profile-picture'>
-          <div id='photo-container'></div>
-        </div>
-        <div id='mid-text'>
-          <h1>Marc Castro</h1>
-          <h2>UX/UI Designer & Developer</h2>
-          <p>Welcome to my portfolio.</p>
-        </div>
+      <div id='profile-picture'>
+        <div id='photo-container'></div>
+      </div>
+      <div id='mid-text'>
+        <h1>MARC CASTRO</h1>
+        <h2>UX/UI Designer & Developer</h2>
+        <p>Los Angeles born, San Francisco based.</p>
+      </div>
     </Wrapper>
   );
 }
