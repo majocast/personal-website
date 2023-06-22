@@ -7,7 +7,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  border-top: 2px solid white;
 `;
 
 function Projects() {
