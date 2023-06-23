@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
-import { Avatar, IconButton } from '@mui/material';
-import { ArrowBackIosNew, LinkedIn, GitHub } from '@mui/icons-material';
+import { IconButton } from '@mui/material';
+import { LinkedIn, GitHub } from '@mui/icons-material';
 import styled from 'styled-components';
 import '../styles/Pages.css';
 import '../styles/Home.css';

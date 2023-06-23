@@ -1,6 +1,6 @@
 import React from 'react';
-import { Avatar, IconButton } from '@mui/material';
-import { ArrowBackIosNew, LinkedIn, GitHub } from '@mui/icons-material';
+import { IconButton } from '@mui/material';
+import { LinkedIn, GitHub } from '@mui/icons-material';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './pages/NavBar';

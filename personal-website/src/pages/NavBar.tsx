@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Avatar from '@mui/material/Avatar';
 import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll';
 import '../styles/NavBar.css';
