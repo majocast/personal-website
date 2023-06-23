@@ -76,6 +76,8 @@
   height: 100%;
   width: 100%;
   opacity: 0;
+  font-weight: 550;
+  text-transform: uppercase;
   color: white;
   background-color: #1a1a1a;
   transition: 0.2s ease-in-out;

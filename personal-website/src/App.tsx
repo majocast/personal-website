@@ -1,4 +1,6 @@
 import React from 'react';
+import { Avatar, IconButton } from '@mui/material';
+import { ArrowBackIosNew, LinkedIn, GitHub } from '@mui/icons-material';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './pages/NavBar';
@@ -8,7 +10,8 @@ import Projects from './pages/Projects';
 
 function App() {
   return (
-      <Router>
+    <>
+    <Router>
         <NavBar />
         <div className='pages'>
           <Home/>
@@ -16,6 +19,40 @@ function App() {
           <Projects />
         </div>
       </Router>
+      <div className='icons'>
+      <IconButton
+        style={{
+          color: 'white',
+          backgroundColor: 'white',
+          scale: '0.9',
+          margin: '5px',
+        }}
+        onClick={() => { window.open('https://www.linkedin.com/in/marcjgcastro/', '_blank', 'noreferrer'); }}
+      >
+        <LinkedIn style={{
+          color: 'black',
+          marginRight: '0',
+          }}
+        />
+      </IconButton>
+      <IconButton
+        style={{
+          color: 'white',
+          backgroundColor:'white',
+          scale: '0.9',
+          margin: '5px',
+        }}
+        onClick={() => { window.open('https://www.linkedin.com/in/marcjgcastro/', '_blank', 'noreferrer'); }}
+      >
+        <GitHub style={{
+          width: '100%',
+          color: 'black',
+          marginRight: '0',
+          }}
+        />
+      </IconButton>
+    </div>
+    </>
   );
 }
 

@@ -59,6 +59,11 @@ Home Screen Text CSS (Right Side)
   margin: 0;
 }
 
+#mid-text div {
+  display: flex;
+  border: 2px dashed white;
+}
+
 /*
 Large Personal Photo CSS (Left Side)
 */

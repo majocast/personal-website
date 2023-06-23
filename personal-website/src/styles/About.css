@@ -33,6 +33,7 @@
 }
 
 #about-nav .active {
+  cursor: default;
   color: goldenrod;
   font-size: 3rem;
 }

@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
-import Avatar from '@mui/material/Avatar';
+import { Avatar, IconButton } from '@mui/material';
+import { ArrowBackIosNew, LinkedIn, GitHub } from '@mui/icons-material';
 import styled from 'styled-components';
 import '../styles/Pages.css';
 import '../styles/Home.css';
@@ -53,6 +54,39 @@ function Home() {
         <h1>MARC CASTRO</h1>
         <h2>UX/UI Designer & Developer</h2>
         <p>Los Angeles born, San Francisco based.</p>
+        <div>
+          <IconButton
+            style={{
+              color: 'white',
+              backgroundColor: 'white',
+              scale: '0.9',
+              margin: '5px',
+            }}
+            onClick={() => { window.open('https://www.linkedin.com/in/marcjgcastro/', '_blank', 'noreferrer'); }}
+          >
+            <LinkedIn style={{
+              color: 'black',
+              marginRight: '0',
+              }}
+            />
+          </IconButton>
+          <IconButton
+            style={{
+              color: 'white',
+              backgroundColor:'white',
+              scale: '0.9',
+              margin: '5px',
+            }}
+            onClick={() => { window.open('https://www.linkedin.com/in/marcjgcastro/', '_blank', 'noreferrer'); }}
+          >
+            <GitHub style={{
+              width: '100%',
+              color: 'black',
+              marginRight: '0',
+              }}
+            />
+          </IconButton>
+        </div>
       </div>
     </Wrapper>
   );
