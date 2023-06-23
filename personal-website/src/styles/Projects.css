@@ -60,7 +60,7 @@
 
 .project:hover {
   .project-cover {
-    opacity: 0.5;
+    opacity: 0.85;
   };
 
   .project-back div {
@@ -71,17 +71,51 @@
 .project-cover {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 3rem;
+  text-align: center;
   height: 100%;
   width: 100%;
   opacity: 0;
-  font-weight: 550;
   text-transform: uppercase;
-  color: white;
   background-color: #1a1a1a;
   transition: 0.2s ease-in-out;
   z-index: 2;
+}
+
+.project-cover span {
+  position: relative;
+  top: 27.5%;
+  height: 15px;
+  padding: 1%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  color: white;
+  font-weight: bold;
+  text-transform: none;
+  background-color: black;
+  border-radius: 20%;
+}
+
+.project-cover span:first-child {
+  text-transform: uppercase;
+  padding: 0%;
+  background-color: transparent;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  font-size: 1.5rem;
+  color: goldenrod;
+  font-weight: 550;
+}
+
+.project-cover p {
+  color: white;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: none;
+  line-height: 1.2rem;
 }
 
 #MP-Background {

@@ -12,13 +12,16 @@ const StyledNav = styled.nav`
     flex-direction: column;
     align-items: center;
     z-index: 10;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 `;
 
 function NavBar() {
   useEffect(() => {
     const ScrollHandler = () => {
       const scrollPosition = window.scrollY;
-      console.log("currentScroll: " + scrollPosition);
       const scrollThreshold = 400;
     
       const hiddenHomeLI = document.querySelector('#home-li') as HTMLElement | null;

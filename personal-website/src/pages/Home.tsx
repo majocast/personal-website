@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import { IconButton } from '@mui/material';
 import { LinkedIn, GitHub } from '@mui/icons-material';
 import styled from 'styled-components';
-import '../styles/Pages.css';
 import '../styles/Home.css';
 
 const Wrapper = styled.div`
@@ -14,7 +13,7 @@ const Wrapper = styled.div`
   mask-image: linear-gradient(to top, transparent 1%, black 5%);
 
   @media screen and (max-width: 800px) {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +26,6 @@ function Home() {
   useEffect(() => {
     const ScrollHandler = () => {
       const scrollPosition = window.scrollY;
-      console.log("currentScroll: " + scrollPosition);
       const scrollThreshold = 400;
     
       const hiddenLIElement = document.querySelector('#profile-picture') as HTMLElement | null;
@@ -77,7 +75,7 @@ function Home() {
               scale: '0.9',
               margin: '5px',
             }}
-            onClick={() => { window.open('https://www.linkedin.com/in/marcjgcastro/', '_blank', 'noreferrer'); }}
+            onClick={() => { window.open('https://github.com/majocast', '_blank', 'noreferrer'); }}
           >
             <GitHub style={{
               width: '100%',

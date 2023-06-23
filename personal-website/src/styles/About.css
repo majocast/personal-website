@@ -27,6 +27,8 @@
 
 #about-nav span {
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-size: 2rem;
   transition: 0.2s ease-in-out;
@@ -134,4 +136,77 @@
   margin-left: 10px;
   font-size: 0.9rem;
   line-height: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .inner-desc p {
+    font-size: 0.7rem;
+  }
+
+  #about-nav {
+    display: none;
+  }
+
+  .about-container {
+    align-items: unset;
+    border: 2px solid blue;
+    width: 100%;
+    flex-basis: 0;
+  }
+
+  #about-content {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 2px solid gold;
+  }
+
+  #about-cont {
+    position: relative;
+    justify-content: unset;
+    width: 100%;
+    min-height: 70%;
+    border: 2px dashed pink;
+  }
+
+  #experience-cont-mobile a {
+    height: unset;
+    text-decoration: none;
+    color: lightgray;
+  }
+
+  .exper-indiv div h5 {
+    flex-basis: unset;
+  }
+
+  .exper-indiv div {
+    flex-basis: unset;
+    display: flex;
+    border: 2px solid white;
+  }
+
+  .inner-desc h5 {
+    display: flex;
+    flex-basis: unset;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    border: 2px dashed red;
+  }
+
+  #experience-cont-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #about-cont h2 {
+    display: none;
+  }
+
+  #experience-cont-mobile {
+    display: none;
+  }
 }

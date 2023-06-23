@@ -52,6 +52,11 @@ function App() {
         />
       </IconButton>
     </div>
+    <div className='project-footer'>
+      <p>Loosely designed via hand drawing and coded in Visual Studio Code by myself! Built with Node.js, the React framework,
+      JavaScript, and HTML & CSS.
+      </p>
+    </div>
     </>
   );
 }
