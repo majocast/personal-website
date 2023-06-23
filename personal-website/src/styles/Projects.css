@@ -5,9 +5,11 @@
 
 #projects-container {
   width: 90%;
+  background-color: #0d0d0d;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 .column {
@@ -16,13 +18,90 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px dashed white;
+  background-color: #0d0d0d;
+  z-index: 1;
 }
 
 .project {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
   position: relative;
   width: 80%;
   height: 10rem;
-  margin-bottom: 10px;
-  border: 2px dashed goldenrod;
+  margin-bottom: 2rem;
+  border-top: 4px solid goldenrod;
+  border-bottom: 4px solid goldenrod;
+}
+
+.project a {
+  text-decoration: none;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border: 2px solid goldenrod;
+}
+
+.project-back {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #0d0d0d;
+  z-index: 1;
+}
+
+.project-back div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project:hover {
+  .project-cover {
+    opacity: 0.5;
+  };
+
+  .project-back div {
+    filter: blur(5px) grayscale(100%);
+  }
+}
+
+.project-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  color: white;
+  background-color: #1a1a1a;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+
+#MP-Background {
+  background-image: url('../images/myportfolio.jpg');
+}
+
+#CC-Background {
+  background-image: url('../images/crisisconnect.jpg');
+}
+
+#OTG-Background {
+  background-image: url('../images/onthegrind.jpg');
+}
+
+#EBS-Background {
+  background-image: url('../images/8bitshooter.jpg');
+}
+
+#SV-Background {
+  background-image: url('../images/sortingvisualizer.jpg');
+}
+
+#PWA-Background {
+  background-image: url('../images/pokerwebapp.jpg');
 }

@@ -104,18 +104,6 @@ function About() {
                 </div>
               </div>
             </a>
-            <a className='exper-indiv' href='https://linktr.ee/ggsfsu'>
-              <div>
-                <h5>SEPTEMBER 2022 - OCTOBER 2022</h5>
-                <div className='inner-desc'>
-                  <h5>Website Developer - SFSU Gaming Gators</h5>
-                  <p>Unpaid, 2 month long position that saw a group of 9 students part of The Gaming Gators, SFSU's Esports team, work on a beta launch
-                    version of the team's website. Brought into the team after being recommended by the club's board to the project lead and was
-                    aided by the project lead during the onboard process. The website was written in React, HTML, CSS, and Javascript.
-                  </p>                    
-                </div>
-              </div>
-            </a>
             <a className='exper-indiv' href='https://www.sfusd.edu/school/everett-middle-school'>
               <div>
                 <h5>JANUARY 2022 - MAY 2022</h5>
