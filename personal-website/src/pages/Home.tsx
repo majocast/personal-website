@@ -80,7 +80,6 @@ function Home() {
             onClick={() => { window.open('https://github.com/majocast', '_blank', 'noreferrer'); }}
           >
             <GitHub style={{
-              width: '100%',
               color: 'black',
               marginRight: '0',
               }}

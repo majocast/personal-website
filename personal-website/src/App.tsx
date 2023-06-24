@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { IconButton } from '@mui/material';
 import { LinkedIn, GitHub } from '@mui/icons-material';
 import './App.css';
@@ -9,6 +10,9 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Marc Castro';
+  }, []);
   return (
     <>
     <Router>
