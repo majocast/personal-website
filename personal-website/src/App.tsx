@@ -1,3 +1,7 @@
+/*
+version: 1.0.0
+*/
+
 import React from 'react';
 import { useEffect } from 'react';
 import { IconButton } from '@mui/material';
@@ -49,7 +53,6 @@ function App() {
         onClick={() => { window.open('https://www.linkedin.com/in/marcjgcastro/', '_blank', 'noreferrer'); }}
       >
         <GitHub style={{
-          width: '100%',
           color: 'black',
           marginRight: '0',
           }}

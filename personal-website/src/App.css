@@ -10,6 +10,7 @@ body {
 .icons {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .project-footer {
