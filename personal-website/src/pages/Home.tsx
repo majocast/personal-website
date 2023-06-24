@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import '../styles/Home.css';
 
 const Wrapper = styled.div`
+  grid-row: auto;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -13,7 +14,8 @@ const Wrapper = styled.div`
   mask-image: linear-gradient(to top, transparent 1%, black 5%);
 
   @media screen and (max-width: 800px) {
-    height: 50vh;
+    width: 100vw;
+    height: 25rem;
     display: flex;
     align-items: center;
     justify-content: center;

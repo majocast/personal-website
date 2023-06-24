@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import '../styles/About.css';
 
 const Wrapper = styled.div`
+  grid-row: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,10 +14,10 @@ const Wrapper = styled.div`
   font-weight: 400;
 
   @media screen and (max-width: 767px) {
-    width: 100vw;
-    align-items: center;
+    display: flex;
     height: 230vh;
-    border: 2px dashed white;
+    width: 99vw;
+    align-items: center;
   }
 `;
 
@@ -146,6 +147,7 @@ function About() {
             </a>
           </div>}
           <div id='experience-cont-mobile'>
+            <h2>EXPERIENCE</h2>
             <a className='exper-indiv' href='https://github.com/CSC-648-SFSU/csc648-02-sp2023-team04'>
               <div>
                 <h5>JANUARY 2023 - MAY 2023</h5>

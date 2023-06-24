@@ -139,6 +139,22 @@
 }
 
 @media screen and (max-width: 767px) {
+  #about-cont {
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    font-size: medium;
+    color: lightgray;
+    animation: fadeIn 1s;
+    font-weight: 500;
+    line-height: 20px;
+    min-height: 100%;
+    justify-content: center;
+  }
+  
   .inner-desc p {
     font-size: 0.7rem;
   }
@@ -149,7 +165,6 @@
 
   .about-container {
     align-items: unset;
-    border: 2px solid blue;
     width: 100%;
     flex-basis: 0;
   }
@@ -159,15 +174,14 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    border: 2px solid gold;
   }
 
   #about-cont {
-    position: relative;
+    margin-left: unset;
     justify-content: unset;
-    width: 100%;
+    position: relative;
+    width: 90%;
     min-height: 70%;
-    border: 2px dashed pink;
   }
 
   #experience-cont-mobile a {
@@ -181,9 +195,9 @@
   }
 
   .exper-indiv div {
+    width: unset;
     flex-basis: unset;
     display: flex;
-    border: 2px solid white;
   }
 
   .inner-desc h5 {
@@ -192,12 +206,17 @@
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    border: 2px dashed red;
+  }
+
+  #experiece-cont-mobile h2 {
+    border: 2px solid white;
   }
 
   #experience-cont-mobile {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

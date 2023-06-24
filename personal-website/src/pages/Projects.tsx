@@ -3,10 +3,18 @@ import styled from 'styled-components';
 import '../styles/Projects.css';
 
 const Wrapper = styled.div`
+  grid-row: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 90vh;
+
+  @media screen and (max-width: 767px) {
+    justify-items: center;
+    height: 170vh;
+    display: flex;
+    position: relative;
+  }
 `;
 
 function Projects() {
@@ -16,7 +24,7 @@ function Projects() {
         <h1>SELECTED PROJECTS</h1>
       </div>
       <div id='projects-container'>
-        <div className='column'>
+        <div className='column column-1'>
           <a className='project' href='https://github.com/majocast/personal-website'>
             <div className='project-cover'>
               <span>My Portfolio</span>
@@ -70,7 +78,7 @@ function Projects() {
             </div>
           </a>
         </div>
-        <div className='column'>
+        <div className='column column-2'>
           <a className='project' href='https://github.com/majocast/Sorting-Visualizer'>
             <div className='project-cover'>
               <span>Sorting Visualizer</span>
