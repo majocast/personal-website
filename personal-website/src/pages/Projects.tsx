@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   height: 90vh;
 
   @media screen and (max-width: 767px) {
-    margin-top: 20px;
+    margin-top: 40px;
     justify-items: center;
     height: 190vh;
     display: flex;
