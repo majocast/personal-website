@@ -199,6 +199,10 @@ function About() {
                 </div>
               </div>
             </a>
+            <span onClick={openResume}>
+            resume
+            <BiLinkExternal style={{width: '1.75rem'}}/>
+            </span>
           </div>
         </div>
       </div>

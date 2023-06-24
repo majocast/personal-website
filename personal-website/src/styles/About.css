@@ -138,6 +138,7 @@
   line-height: 20px;
 }
 
+
 @media screen and (max-width: 767px) {
   #about-cont {
     margin-left: 20px;
@@ -188,6 +189,12 @@
     height: unset;
     text-decoration: none;
     color: lightgray;
+  }
+
+  #experience-cont-mobile span {
+    display: flex;
+    width: 20%;
+    color: white;
   }
 
   .exper-indiv div h5 {
