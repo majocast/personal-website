@@ -1,4 +1,6 @@
 body {
+  justify-content: center;
+  align-items: center;
   color: whitesmoke;
   overflow-x: hidden;
   background-color: #0d0d0d;

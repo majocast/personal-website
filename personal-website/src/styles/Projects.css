@@ -1,25 +1,17 @@
-#projects-header {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
-}
-
-#projects-container {
+#grid-container {
+  display: grid;
   width: 90%;
-  background-color: #0d0d0d;
-  display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
-  z-index: 3;
+  border: 2px dashed white;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.column {
-  flex-basis: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #0d0d0d;
-  z-index: 1;
+#projects > h5 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 2rem;
 }
 
 .project {
