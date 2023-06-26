@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   align-items: center;
   height: auto;
   width: 100vw;
-  border: 2px solid gold;
 
   @media screen and (max-width: 767px) {
     margin-top: 40px;
@@ -39,9 +38,7 @@ function Projects() {
               navigate the website.
             </p>
           </div>
-          <div className='project-back'>
-            <div id='MP-Background'/>
-          </div>
+          <div className='project-back' id='MP-Background' />
         </a>
         <a className='project' href='https://github.com/CSC-648-SFSU/csc648-02-sp2023-team04'>
           <div className='project-cover'>
@@ -57,9 +54,7 @@ function Projects() {
               register/login to access capabilities to recieve personalized updates, and more.
             </p>
           </div>
-          <div className='project-back'>
-            <div id='CC-Background'/>
-          </div>
+          <div className='project-back' id='CC-Background' />
         </a>
         <a className='project' href='https://github.com/majocast/OnTheGrind/tree/main'>
           <div className='project-cover'>
@@ -73,9 +68,7 @@ function Projects() {
               questions, view our FAQ page to see if others had similar questions, view your cart, and more.
             </p>
           </div>
-          <div className='project-back'>
-            <div id='OTG-Background'/>
-          </div>
+          <div className='project-back' id='OTG-Background' />
         </a>
         <a className='project' href='https://github.com/majocast/Sorting-Visualizer'>
           <div className='project-cover'>
@@ -89,9 +82,7 @@ function Projects() {
               values applies to elements to help display the algorithm in action.
             </p>
           </div>
-          <div className='project-back'>
-            <div id='SV-Background'/>
-          </div>
+          <div className='project-back' id='SV-Background' />
         </a>
         <a className='project' href='https://github.com/majocast/8-Bit-Shooter'>
           <div className='project-cover'>
@@ -104,9 +95,7 @@ function Projects() {
               the shooting mechanic. Written primarily in JavaScript. 
             </p>
           </div>
-          <div className='project-back'>
-            <div id='EBS-Background'/>
-          </div>
+          <div className='project-back' id='EBS-Background' />
         </a>
         <a className='project' href='https://github.com/csc-667-spring-2023-roberts/term-project-leeroyjenkins'>
           <div className='project-cover'>
@@ -119,9 +108,7 @@ function Projects() {
               see who is still in the game, the board in its entirety, and a text chat to communicate with others.
             </p>
           </div>
-          <div className='project-back'>
-            <div id='PWA-Background'/>
-          </div>
+          <div className='project-back' id='PWA-Background' />
         </a>
       </div>
     </Wrapper>

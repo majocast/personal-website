@@ -4,18 +4,20 @@ import { Link as ScrollLink } from 'react-scroll';
 import '../styles/NavBar.css';
 
 const StyledNav = styled.nav`
-    position: fixed;
-    width: 100%;
-    color: white;
-    background-color: #0d0d0d;
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 5vh;
+  padding-bottom: 2rem;
+  color: white;
+  background-color: #0d0d0d;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
 
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 function NavBar() {

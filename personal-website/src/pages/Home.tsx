@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import '../styles/Home.css';
 
 const Wrapper = styled.div`
-  grid-row: auto;
-  height: 100vh;
+  height: 90vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,9 +47,7 @@ function Home() {
   }, []);
   return (
     <Wrapper id='home'>
-      <div id='profile-picture'>
-        <div id='photo-container'></div>
-      </div>
+      <div id='photo-container' />
       <div id='mid-text'>
         <h1>MARC CASTRO</h1>
         <h2>UX/UI Designer & Developer</h2>

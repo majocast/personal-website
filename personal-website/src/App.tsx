@@ -20,9 +20,9 @@ function App() {
   return (
     <>
     <Router>
-        <NavBar />
         <div className='pages'>
           <Home/>
+          <NavBar />
           <About />
           <Projects />
         </div>
