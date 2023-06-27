@@ -1,17 +1,18 @@
 #grid-container {
   display: grid;
   width: 90%;
+  height: 90%;
   justify-items: center;
   align-items: center;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
 }
 
 #projects > h5 {
   font-size: 2rem;
-  font-weight: 500;
-  padding: 0;
-  margin: 3rem;
+  font-weight: 600;
+  margin-top: 5rem;
 }
 
 .project {
@@ -20,7 +21,7 @@
   display: flex;
   position: relative;
   width: 80%;
-  height: 10rem;
+  height: 100%;
   margin-bottom: 2rem;
   border-top: 4px solid goldenrod;
   border-bottom: 4px solid goldenrod;

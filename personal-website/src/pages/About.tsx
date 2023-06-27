@@ -5,7 +5,7 @@ import '../styles/About.css';
 
 const Wrapper = styled.div`
   display: flex;
-  height: 100vh;
+  min-height: 95vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;

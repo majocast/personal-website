@@ -1,17 +1,17 @@
 .about-container {
   width: 90%;
-  height: 90%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about-container div:first-child {
-  flex-basis: 20%;
+.about-container div {
+  flex-basis: 65%;
 }
 
-.about-container div {
-  flex-basis: 60%;
+.about-container div:first-child {
+  flex-basis: 20%;
 }
 
 #about-nav {
@@ -117,7 +117,7 @@
   padding: 0;
   margin-top: 0;
   font-size: 1rem;
-  line-height: 20px;
+  line-height: 1.5rem;
 }
 
 
@@ -136,10 +136,6 @@
     line-height: 20px;
     min-height: 100%;
     justify-content: center;
-  }
-  
-  .inner-desc p {
-    font-size: 0.7rem;
   }
 
   #about-nav {

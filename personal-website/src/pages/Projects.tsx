@@ -5,9 +5,9 @@ import '../styles/Projects.css';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  height: auto;
+  height: 90vh;
   width: 100vw;
 
   @media screen and (max-width: 767px) {
