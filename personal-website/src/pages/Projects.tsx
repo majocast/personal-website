@@ -11,8 +11,7 @@ const Wrapper = styled.div`
   width: 100vw;
 
   @media screen and (max-width: 767px) {
-    margin-top: 40px;
-    justify-items: center;
+    justify-content: unset;
     height: 200vh;
     display: flex;
     position: relative;
@@ -22,7 +21,7 @@ const Wrapper = styled.div`
 function Projects() {
   return (
     <Wrapper id='projects'>
-      <h5>SELECTED PROJECTS</h5>
+      <h2>SELECTED PROJECTS</h2>
       <div id='grid-container'>
         <a className='project' href='https://github.com/majocast/personal-website'>
           <div className='project-cover'>

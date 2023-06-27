@@ -13,13 +13,14 @@ const Wrapper = styled.div`
   -webkit-mask-image: linear-gradient(to top, transparent 1%, black 5%);
   mask-image: linear-gradient(to top, transparent 1%, black 5%);
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     width: 100vw;
-    height: 25rem;
+    height: 60vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     flex-direction: column;
+    -webkit-mask-image: unset;
+    mask-image: unset;
   }
 `;
 
