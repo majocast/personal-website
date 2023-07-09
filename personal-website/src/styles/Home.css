@@ -1,20 +1,31 @@
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #mid-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: lightgrey;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
+  padding: 1rem;
   margin-left: 15px;
   width: 35%;
   border-top: 2px solid goldenrod;
   border-bottom: 2px solid goldenrod;
+  animation: fadeUp 2s;
 }
 
 #mid-text > h1 {
   font-size: 5rem;
   margin: 0;
+  padding-left: 0;
 }
 
 #photo-container {
@@ -30,6 +41,7 @@
   filter: grayscale(100%);
   -webkit-mask-image: linear-gradient(to top, transparent 1%, black 15%);
   mask-image: linear-gradient(to top, transparent 1%, black 15%);
+  animation: fadeUp 2s;
 }
 
 /*Mobile/Smaller Screen Adaptations*/

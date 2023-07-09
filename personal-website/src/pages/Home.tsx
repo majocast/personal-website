@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import * as React from 'react';
 import { IconButton } from '@mui/material';
 import { LinkedIn, GitHub } from '@mui/icons-material';
 import styled from 'styled-components';
@@ -26,26 +26,6 @@ const Wrapper = styled.div`
 
 
 function Home() {
-  useEffect(() => {
-    const ScrollHandler = () => {
-      const scrollPosition = window.scrollY;
-      const scrollThreshold = 400;
-    
-      const hiddenLIElement = document.querySelector('#profile-picture') as HTMLElement | null;
-    
-      if(hiddenLIElement && scrollPosition > scrollThreshold) {
-        hiddenLIElement?.classList.add('expand');
-      } else {
-        hiddenLIElement?.classList.remove('expand');
-      }
-    };
-
-    window.addEventListener('scroll', ScrollHandler);
-
-    return () => {
-      window.removeEventListener('scroll', ScrollHandler);
-    };
-  }, []);
   return (
     <Wrapper id='home'>
       <div id='photo-container' />
@@ -60,7 +40,19 @@ function Home() {
               backgroundColor: 'white',
               scale: '0.9',
               margin: '5px',
+              marginLeft: '0',
+              transition: 'color 0.3s, background-color 0.3',
             }}
+            onMouseEnter={(e) => {
+              const element = e.currentTarget as HTMLButtonElement;
+              element.style.color = 'goldenrod';
+              element.style.backgroundColor = 'goldenrod';
+            }}   
+            onMouseLeave={(e) => {
+              const element = e.currentTarget as HTMLButtonElement;
+              element.style.color = 'white';
+              element.style.backgroundColor = 'white';
+            }}  
             onClick={() => { window.open('https://www.linkedin.com/in/marcjgcastro/', '_blank', 'noreferrer'); }}
           >
             <LinkedIn style={{
@@ -75,7 +67,18 @@ function Home() {
               backgroundColor:'white',
               scale: '0.9',
               margin: '5px',
+              transition: 'color 0.3s, background-color 0.3s',
             }}
+            onMouseEnter={(e) => {
+              const element = e.currentTarget as HTMLButtonElement;
+              element.style.color = 'goldenrod';
+              element.style.backgroundColor = 'goldenrod';
+            }}   
+            onMouseLeave={(e) => {
+              const element = e.currentTarget as HTMLButtonElement;
+              element.style.color = 'white';
+              element.style.backgroundColor = 'white';
+            }}  
             onClick={() => { window.open('https://github.com/majocast', '_blank', 'noreferrer'); }}
           >
             <GitHub style={{

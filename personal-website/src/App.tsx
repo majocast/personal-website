@@ -1,5 +1,5 @@
 /*
-version: 1.0.4
+version: 1.0.5
 */
 
 import React from 'react';
@@ -20,9 +20,9 @@ function App() {
   return (
     <>
     <Router>
+      <NavBar />
         <div className='pages'>
           <Home/>
-          <NavBar />
           <About />
           <Projects />
         </div>
