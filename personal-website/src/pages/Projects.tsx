@@ -21,7 +21,7 @@ const Wrapper = styled.div`
 function Projects() {
   return (
     <Wrapper id='projects'>
-      <h2>SELECTED PROJECTS</h2>
+      <h1>SELECTED PROJECTS</h1>
       <div id='grid-container'>
         <a className='project' href='https://github.com/majocast/personal-website'>
           <div className='project-cover'>

@@ -9,11 +9,11 @@
   row-gap: 2rem;
 }
 
-#projects > h2 {
-  font-size: 2rem;
+#projects > h1 {
+  font-size: 60px;
   font-weight: 600;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .project {
