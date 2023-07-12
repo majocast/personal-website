@@ -1,194 +1,81 @@
 .about-container {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
   width: 90%;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid white;
+  background-color: black;
+  font-family: 'Courier New', sans-serif;
+  font-size: 1.25rem;
 }
 
-.about-container div {
-  flex-basis: 65%;
+@keyframes typing {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
 }
 
-.about-container div:first-child {
-  flex-basis: 20%;
+@keyframes slide {
+  100% {
+    top: -280px;
+  }
 }
 
-#about-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center left;
+.textWrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  display: inline-flex;
+}
+
+.textWrapper .staticTxt {
   color: lightgray;
-}
-
-#about-nav span {
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 2rem;
-  transition: 0.2s ease-in-out;
-}
-
-#about-nav .active {
-  cursor: default;
-  color: goldenrod;
-  font-size: 3rem;
-}
-
-#about-nav span:not(.active):hover {
-  font-size: 2.5rem;
-}
-
-#about-content {
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@keyframes fadeIn {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
-}
-
-#about-cont {
-  margin-left: 20px;
-  width: 100%;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  flex-direction: column;
-  font-size: large;
-  color: lightgray;
-  animation: fadeIn 1s;
+  font-size: 60px;
   font-weight: 400;
-  line-height: 25px;
-  min-height: 100%;
-  justify-content: center;
 }
 
-#experience-cont {
-  margin-left: 15%;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  width: 100%;
-  font-weight: 525;
-  animation: fadeIn 1s;
-}
-
-#experience-cont > a {
-  flex: 1;
-  opacity: 0.8;
-  color: lightgrey;
-  font-size: 1.1rem;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto auto;
-  column-gap: 1rem;
-  text-decoration: none;
-  transition: 0.2s ease-in-out;
-  border-radius: 10px;
-}
-
-#experience-cont a:hover {
-  opacity: 1;
-  background-color: #1a1a1a;
-  .inner-desc h5 {
-    transition: 0.2s ease-in-out;
-    color: goldenrod;
-  }
-}
-
-#experience-cont > a > h5 {
-  font-size: 1rem;
-  padding-top: 0.5rem;
-  margin: 0;
-}
-
-#experience-cont > a > h5:first-child {
-  padding-left: 0.5rem;
-}
-
-#experience-cont > a > p {
-  grid-area: 2 / 2 / 2 / 2;
+.textWrapper .dynamicTxts {
   padding: 0;
-  margin-top: 0;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  margin: 0;
+  margin-left: 15px;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
-  #about-cont {
-    display: none;
-  }
-
-  #experience-cont {
-    display: none;
-  }
-
-  #about-nav {
-    display: none;
-  }
-
-  .about-container {
-    align-items: unset;
-    justify-content: unset;
-    width: 100%;
-    height: 100%;
-  }
-
-  .about-container div {
-    flex-basis: unset;
-  }
-
-  #about-content {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  #experience-cont-mobile {
-    margin-left: 5px;
-    margin-right: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #experience-cont-mobile a {
-    height: unset;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto auto;
-    column-gap: 1rem;
-    text-decoration: none;
-    color: lightgray;
-  }
-
-  #experience-cont-mobile > a > p {
-    grid-area: 2 / 2 / 2 / 2;
-    padding: 0;
-    margin-top: 0;
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  #experience-cont-mobile > span:last-child {
-    position: relative;
-  }
+.dynamicTxts li {
+  position: relative;
+  top: 0;
+  color: goldenrod;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  animation: slide 16s steps(4) infinite;
+  animation-delay: 2s;
 }
 
-@media screen and (min-width: 768px) {
-  #about-cont h2 {
-    display: none;
-  }
-
-  #experience-cont-mobile {
-    display: none;
-  }
+.dynamicTxts li span {
+  position: relative;
 }
+
+.dynamicTxts li span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0d0d0d;
+  border-left: 2px solid goldenrod;
+  animation: typing 4s steps(14) infinite;
+  animation-delay: 2s;
+
+}
+

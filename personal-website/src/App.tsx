@@ -11,6 +11,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './pages/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
+import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
     <Router>
       <NavBar />
         <div className='pages'>
-          <Home/>
+          <Home />
           <About />
+          <Experience />
           <Projects />
         </div>
       </Router>

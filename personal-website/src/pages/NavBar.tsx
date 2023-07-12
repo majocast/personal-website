@@ -1,4 +1,4 @@
-
+import { BiLinkExternal } from 'react-icons/bi';
 import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll';
 import '../styles/NavBar.css';
@@ -27,17 +27,22 @@ function NavBar() {
     <StyledNav>
       <h1>MARC CASTRO</h1>
       <ul className='nav-contents'>
-        <ScrollLink to='about' smooth={true}>
-          <li id='about-li'>
-            ABOUT
-          </li>
-        </ScrollLink>
-        <ScrollLink to='home' smooth={true}>
+        <ScrollLink to='home' smooth={true} offset={-50}>
           <li id='home-li'>
             HOME
           </li>
         </ScrollLink>
-        <ScrollLink to='projects' smooth={true}>
+        <ScrollLink to='about' smooth={true} offset={-75}>
+          <li id='about-li'>
+            ABOUT
+          </li>
+        </ScrollLink>
+        <ScrollLink to='experience' smooth={true} offset={-75}>
+          <li id='experience-li'>
+            EXPERIENCE
+          </li>
+        </ScrollLink>
+        <ScrollLink to='projects' smooth={true} offset={-50}>
           <li id='projects-li'>
             PROJECTS
           </li>

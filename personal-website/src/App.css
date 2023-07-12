@@ -1,7 +1,8 @@
 body {
+  display: flex;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
+  color: lightgrey;
   overflow-x: hidden;
   background-color: #0d0d0d;
   font-family: 'Lexend Deca', sans-serif;

@@ -5,13 +5,15 @@ import styled from 'styled-components';
 import '../styles/Home.css';
 
 const Wrapper = styled.div`
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
+  margin-bottom: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   -webkit-mask-image: linear-gradient(to top, transparent 1%, black 5%);
   mask-image: linear-gradient(to top, transparent 1%, black 5%);
+  animation: fadeUp 2s;
 
   @media screen and (max-width: 767px) {
     width: 100vw;
