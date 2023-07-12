@@ -48,7 +48,7 @@ function About() {
         </span>
         <br />
         <span>$ type about.txt<br /></span>
-        <p className='asbout-text'>
+        <p className='about-text'>
           Back at the end of my 2018 Fall Semester of high school, just before submitting college admissions
           applications, I switched my major from Aerospace Engineering to Computer Science minutes before the
           submission deadline. Now in 2023, I have the honor and privelege to declare myself a Bachelor of 
@@ -63,7 +63,7 @@ function About() {
           When not at the computer, I'm usually playing basketball, hanging out with friends, exploring San Francisco 
           weight lifting, dabbling in film photography, or building a Gundam and/or Lego set.
         </p>
-        <span>$ |<br /></span>
+        $<span className='cursor'> |</span>
       </div>   
     </Wrapper>
   );

@@ -31,3 +31,9 @@ h1 {
   background-color: goldenrod;
   color: black;
 }
+
+#resume-li a {
+  color: lightgray;
+  list-style: none;
+  text-decoration: none;
+}

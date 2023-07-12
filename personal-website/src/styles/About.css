@@ -28,6 +28,12 @@
   }
 }
 
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
 .textWrapper {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -76,6 +82,9 @@
   border-left: 2px solid goldenrod;
   animation: typing 4s steps(14) infinite;
   animation-delay: 2s;
+}
 
+.cursor {
+  animation: blink 0.4s alternate infinite;
 }
 
