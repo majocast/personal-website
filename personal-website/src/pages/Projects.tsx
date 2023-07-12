@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 767px) {
     justify-content: unset;
