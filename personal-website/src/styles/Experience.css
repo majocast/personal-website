@@ -3,6 +3,10 @@
   to {opacity: 100%;}
 }
 
+#experience h1 {
+  font-size: 60px;
+}
+
 .exper-container {
   width: 90%;
   display: flex;

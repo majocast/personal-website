@@ -24,12 +24,12 @@ function About() {
   return (
     <Wrapper id='about'>
       <div className='textWrapper'>
-        <div className='staticTxt'>Call me a</div>
+        <div className='staticTxt'>CALL ME A</div>
         <ul className='dynamicTxts'>
-          <li><span>UI/UX Designer</span></li>
-          <li><span>Developer</span></li>
-          <li><span>NBA Lover</span></li>
-          <li><span>Photographer</span></li>
+          <li><span>UI/UX DESIGNER</span></li>
+          <li><span>DEVELOPER</span></li>
+          <li><span>NBA LOVER</span></li>
+          <li><span>PHOTOGRAPHER</span></li>
         </ul>
       </div>
       <div className='about-container'>
@@ -60,9 +60,10 @@ function About() {
           working on personal projects and expanding my reach via coding competitions and web developer
           meet ups.
           <br/><br/>
-          When not at the computer, I'm usually playing basketball, hanging out with friends, weight
-          lifting, dabbling in film photography, or building a Gundam and/or Lego set.
+          When not at the computer, I'm usually playing basketball, hanging out with friends, exploring San Francisco 
+          weight lifting, dabbling in film photography, or building a Gundam and/or Lego set.
         </p>
+        <span>$ |<br /></span>
       </div>   
     </Wrapper>
   );
