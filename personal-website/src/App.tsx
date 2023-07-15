@@ -1,5 +1,5 @@
 /*
-version: 1.8.1
+version: 2.0.0
 */
 
 import React from 'react';
@@ -63,7 +63,7 @@ function App() {
     </div>
     <div className='project-footer'>
       <p>Loosely designed via hand drawing and coded in Visual Studio Code by myself! Built with Node.js, the React framework,
-      JavaScript, and HTML & CSS.
+      JavaScript, and HTML & CSS, and deployed on Netlify.
       </p>
     </div>
     </>

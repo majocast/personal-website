@@ -18,12 +18,12 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100vw;
   margin-bottom: 20px;
+  margin-top: 20px;
+  border-top: 2px solid goldenrod;
 
   @media screen and (max-width: 767px) {
-    justify-content: unset;
-    height: 200vh;
     display: flex;
-    position: relative;
+    align-items: center;
   }
 `;
 

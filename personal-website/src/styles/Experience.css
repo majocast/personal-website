@@ -7,6 +7,13 @@
   font-size: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  #experience h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
 .exper-container {
   width: 90%;
   display: flex;
@@ -55,4 +62,25 @@
   margin-top: 0;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  #experience h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .exper-resume {
+    color: lightgray;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .exper-resume {
+    display: none;
+  }
 }

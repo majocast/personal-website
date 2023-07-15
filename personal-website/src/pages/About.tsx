@@ -13,10 +13,10 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 767px) {
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    width: 99vw;
-    justify-content: unset;
-    align-items: unset;
+    width: 100vw;
   }
 `;
 

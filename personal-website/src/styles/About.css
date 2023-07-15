@@ -16,9 +16,11 @@
 @keyframes typing {
   40%, 60% {
     left: 100%;
+    width: 0;
   }
   100% {
     left: 0;
+    width: 100%;
   }
 }
 
@@ -39,7 +41,10 @@
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .textWrapper .staticTxt {
@@ -53,8 +58,10 @@
   margin: 0;
   margin-left: 15px;
   height: 70px;
+  text-align: center;
   line-height: 70px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .dynamicTxts li {
@@ -86,5 +93,32 @@
 
 .cursor {
   animation: blink 0.4s alternate infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    width: 85%;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -160px;
+    }
+  }
+
+  .textWrapper .staticTxt {
+    font-size: 40px;
+  }
+  
+  .textWrapper .dynamicTxts {
+    margin: 0;
+    height: 35px;
+    line-height: 40px;
+  }
+  
+  .dynamicTxts li {
+    font-size: 40px;
+  }
+  
 }
 

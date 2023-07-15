@@ -17,12 +17,9 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 767px) {
     width: 100vw;
-    height: 60vh;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    -webkit-mask-image: unset;
-    mask-image: unset;
+    justify-content: unset;
+    align-items: unset;
+    height: unset;
   }
 `;
 

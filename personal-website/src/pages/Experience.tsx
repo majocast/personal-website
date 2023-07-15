@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { BiLinkExternal } from 'react-icons/bi';
 import styled from 'styled-components';
 import '../styles/Experience.css';
 
@@ -61,6 +62,10 @@ const Experience = () => {
             </p>                    
         </a>
       </div>
+      <a className='exper-resume' href='https://docs.google.com/document/d/1O_zaQqqFf9zDP4WAGqniTCyJJEU4uBZTjo-c2TxhfDo/edit?usp=sharing'>
+        RESUME
+        <BiLinkExternal size={17.5} style={{marginLeft: '0.5rem'}}/>
+      </a>
     </Wrapper>
   )
 }
