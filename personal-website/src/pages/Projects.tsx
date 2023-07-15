@@ -9,7 +9,8 @@ import { BiLogoTypescript,
   BiLogoJavascript,
   BiLogoPhp,
   BiLogoAws,
-  BiLogoPostgresql
+  BiLogoPostgresql,
+  BiLogoNodejs
 } from 'react-icons/bi';
 
 const Wrapper = styled.div`
@@ -41,6 +42,7 @@ function Projects() {
               <BiLogoHtml5 size={50} title='HTML5'/>
               <BiLogoCss3 size={50} title='CSS3'/>
               <BiLogoTypescript size={50} title='TypeScript'/>
+              <BiLogoNodejs size={50} title='Node.JS' />
               <SiNetlify size={50} title='Netlify'/>
             </div>
             <p>Solo developed portfolio written over the span of 1 month as a means of
