@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import '../styles/Projects.css';
-import { SiWebpack, SiNetlify } from 'react-icons/si';
+import { SiWebpack, SiAxios } from 'react-icons/si';
 import { BiLogoTypescript, 
   BiLogoReact, 
   BiLogoCss3, 
@@ -43,7 +43,6 @@ function Projects() {
               <BiLogoCss3 size={50} title='CSS3'/>
               <BiLogoTypescript size={50} title='TypeScript'/>
               <BiLogoNodejs size={50} title='Node.JS' />
-              <SiNetlify size={50} title='Netlify'/>
             </div>
             <p>Solo developed portfolio written over the span of 1 month as a means of
               learning TypeScript and reinforcing understanding of the React framework.
@@ -121,20 +120,21 @@ function Projects() {
             </p>
           </div>
         </a>
-        <a className='project' href='https://github.com/majocast/8-Bit-Shooter'>
+        <a className='project' href='https://majocast.github.io/weather-app-react/'>
           <div className='projectDesc'>
-            <h1>8-Bit Shooter</h1>
+            <h1>Weather App</h1>
             <div className='skills'>
               <BiLogoHtml5 size={50} title='HTML5'/>
               <BiLogoCss3 size={50} title='CSS3'/>
               <BiLogoJavascript size={50} title='JavaScript'/>
+              <SiAxios size={50} title='Axios'/>
             </div>
-            <p>A little web mini game where enemies will spawn from two doors, and you will have to fight them
-              off in order to survive for as long as you can! The controls are simple, WASD, with clicking being
-              the shooting mechanic. Written primarily in JavaScript. 
+            <p>A little weather app that allows for city search using the openweathermap.org Weather API.
+              Website displays the current temperature, the cloud coverage, any weather like thunderstorms
+              or rain, humidity, and wind speed. It also displays the resulting city from the search.
             </p>
           </div>
-          <div className='projectImg' id='EBS-Background' />
+          <div className='projectImg' id='WA-Background' />
         </a>
       </div>
     </Wrapper>
