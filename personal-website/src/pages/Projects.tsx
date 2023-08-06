@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import '../styles/Projects.css';
-import { SiWebpack, SiAxios } from 'react-icons/si';
+import { SiWebpack, SiAxios, SiExpress, SiRender } from 'react-icons/si';
 import { BiLogoTypescript, 
   BiLogoReact, 
   BiLogoCss3, 
   BiLogoHtml5, 
   BiLogoJavascript,
-  BiLogoPhp,
+  BiLogoBootstrap,
   BiLogoAws,
   BiLogoPostgresql,
-  BiLogoNodejs
+  BiLogoNodejs,
+  BiLogoSpotify
 } from 'react-icons/bi';
 
 const Wrapper = styled.div`
@@ -33,7 +34,7 @@ function Projects() {
     <Wrapper id='projects'>
       <h1>SELECTED PROJECTS</h1>
       <div id='gridContainer'>
-        <a className='project' href='https://github.com/majocast/personal-website'>
+        <a className='project' href='marccastro.onrender.com'>
           <div className='projectImg' id='MP-Background' />
           <div className='projectDesc'>
             <h1>marccastro.netlify.app</h1>
@@ -43,6 +44,7 @@ function Projects() {
               <BiLogoCss3 size={50} title='CSS3'/>
               <BiLogoTypescript size={50} title='TypeScript'/>
               <BiLogoNodejs size={50} title='Node.JS' />
+              <SiRender size={50} title='Render'/>
             </div>
             <p>Solo developed portfolio written over the span of 1 month as a means of
               learning TypeScript and reinforcing understanding of the React framework.
@@ -88,21 +90,29 @@ function Projects() {
             </p>
           </div>
         </a>
-        <a className='project' href='https://github.com/majocast/OnTheGrind/tree/main'>
+        <a className='project' href='https://semiwrapped.onrender.com'>
           <div className='projectDesc'>
-            <h1>On The Grind</h1>
+            <h1>SemiWrapped</h1>
             <div className='skills'>
+              <BiLogoReact size={50} title='React'/>
               <BiLogoHtml5 size={50} title='HTML5'/>
               <BiLogoCss3 size={50} title='CSS3'/>
               <BiLogoJavascript size={50} title='JavaScript'/>
-              <BiLogoPhp size={50} title='PHP'/>
+              <BiLogoBootstrap size={50} title='Bootstrap' />
+              <SiAxios size={50} title='Axios'/>
+              <SiExpress size={50} title='Express'/>
+              <BiLogoSpotify size={50} title='Spotify'/>
+              <SiRender size={50} title='Render'/>
             </div>
-            <p>An e-commerce web application for coffee! You can shop around our home page, go about 
-              looking at our full product listing, view the team in the about page. If you have any 
-              questions, view our FAQ page to see if others had similar questions, view your cart, and more.
+            <p>
+              A web application made using the Spotify API that allows users to log in
+              with their spotify premium account and look through the past 6 months of
+              data in a concise and sorted manner. Users shall be able to see their
+              genre pool and top artists and songs. It is currently awaiting quota
+              extension from Spotify.
             </p>
           </div>
-          <div className='projectImg' id='OTG-Background' />
+          <div className='projectImg' id='SW-Background' />
         </a>
         <a className='project' href='https://github.com/majocast/Sorting-Visualizer'>
           <div className='projectImg' id='SV-Background' />
