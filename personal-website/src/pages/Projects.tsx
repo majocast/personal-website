@@ -34,7 +34,7 @@ function Projects() {
     <Wrapper id='projects'>
       <h1>SELECTED PROJECTS</h1>
       <div id='gridContainer'>
-        <a className='project' href='marccastro.onrender.com'>
+        <a className='project' href='https://github.com/majocast/personal-website'>
           <div className='projectImg' id='MP-Background' />
           <div className='projectDesc'>
             <h1>marccastro.netlify.app</h1>
