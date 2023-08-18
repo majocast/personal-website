@@ -63,7 +63,6 @@ function Projects() {
               <BiLogoReact size={50} title='React'/>
               <BiLogoNodejs size={50} title='Node.js' />
               <BiLogoHtml5 size={50} title='HTML5'/>
-              <BiLogoCss3 size={50} title='CSS3'/>
               <BiLogoJavascript size={50} title='JavaScript'/>
               <BiLogoTailwindCss size={50} title='Tailwind CSS'/>
               <SiAxios size={50} title='Axios'/>
