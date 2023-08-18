@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import '../styles/Projects.css';
-import { SiWebpack, SiAxios, SiExpress, SiRender } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender } from 'react-icons/si';
 import { BiLogoTypescript, 
+  BiLogoMongodb,
   BiLogoReact, 
   BiLogoCss3, 
   BiLogoHtml5, 
   BiLogoJavascript,
   BiLogoBootstrap,
   BiLogoAws,
-  BiLogoPostgresql,
   BiLogoNodejs,
-  BiLogoSpotify
+  BiLogoSpotify,
+  BiLogoTailwindCss
 } from 'react-icons/bi';
 
 const Wrapper = styled.div`
@@ -43,7 +44,6 @@ function Projects() {
               <BiLogoHtml5 size={50} title='HTML5'/>
               <BiLogoCss3 size={50} title='CSS3'/>
               <BiLogoTypescript size={50} title='TypeScript'/>
-              <BiLogoNodejs size={50} title='Node.JS' />
               <SiRender size={50} title='Render'/>
             </div>
             <p>Solo developed portfolio written over the span of 1 month as a means of
@@ -51,6 +51,51 @@ function Projects() {
               Process included sketches, rough drafting, quality assurance and user 
               central design review via having colleagues, recruiters and advisors 
               navigate the website.
+            </p>
+          </div>
+        </a>
+        <a className='project' href='https://onthegrind.onrender.com/'>
+          <div className='projectDesc'>
+            <h1>On The Grind</h1>
+            <div className='skills'>
+              <BiLogoMongodb size={50} title='MongoDB'/>
+              <SiExpress size={50} title='Express'/>
+              <BiLogoReact size={50} title='React'/>
+              <BiLogoNodejs size={50} title='Node.js' />
+              <BiLogoHtml5 size={50} title='HTML5'/>
+              <BiLogoCss3 size={50} title='CSS3'/>
+              <BiLogoJavascript size={50} title='JavaScript'/>
+              <BiLogoTailwindCss size={50} title='Tailwind CSS'/>
+              <SiAxios size={50} title='Axios'/>
+            </div>
+            <p>A full stack e-commerce website that allows users to view the products that the company
+              known as "On The Grind" have to offer! Users can navigate the page, sign in or create an account,
+              add items to their cart, place an order, and so much more. 
+            </p>
+          </div>
+          <div className='projectImg' id='OTG-Background' />
+        </a>
+        <a className='project' href='https://semiwrapped.onrender.com'>
+          <div className='projectImg' id='SW-Background' />
+          <div className='projectDesc'>
+            <h1>SemiWrapped</h1>
+            <div className='skills'>
+              <BiLogoReact size={50} title='React'/>
+              <BiLogoHtml5 size={50} title='HTML5'/>
+              <BiLogoCss3 size={50} title='CSS3'/>
+              <BiLogoJavascript size={50} title='JavaScript'/>
+              <BiLogoBootstrap size={50} title='Bootstrap' />
+              <SiAxios size={50} title='Axios'/>
+              <SiExpress size={50} title='Express'/>
+              <BiLogoSpotify size={50} title='Spotify'/>
+              <SiRender size={50} title='Render'/>
+            </div>
+            <p>
+              A web application made using the Spotify API that allows users to log in
+              with their spotify premium account and look through the past 6 months of
+              data in a concise and sorted manner. Users shall be able to see their
+              genre pool and top artists and songs. It is currently awaiting quota
+              extension from Spotify.
             </p>
           </div>
         </a>
@@ -73,64 +118,8 @@ function Projects() {
           </div>
           <div className='projectImg' id='CC-Background' />
         </a>
-        <a className='project' href='https://github.com/csc-667-spring-2023-roberts/term-project-leeroyjenkins'>
-          <div className='projectImg' id='PWA-Background' />
-          <div className='projectDesc'>
-            <h1>Poker Web App</h1>
-            <div className='skills'>
-              <BiLogoHtml5 size={50} title='HTML5'/>
-              <BiLogoCss3 size={50} title='CSS3'/>
-              <BiLogoJavascript size={50} title='JavaScript'/>
-              <SiWebpack size={50} title='WebPack'/>
-              <BiLogoPostgresql size={50} title='PostgreSQL'/>
-            </div>
-            <p>Online Poker realm where users can create and join lobbies to play with friends or strangers in a
-              couple games of Texas Hold'em Poker! Once logged in or registered, users shall be able to join a game and 
-              see who is still in the game, the board in its entirety, and a text chat to communicate with others.
-            </p>
-          </div>
-        </a>
-        <a className='project' href='https://semiwrapped.onrender.com'>
-          <div className='projectDesc'>
-            <h1>SemiWrapped</h1>
-            <div className='skills'>
-              <BiLogoReact size={50} title='React'/>
-              <BiLogoHtml5 size={50} title='HTML5'/>
-              <BiLogoCss3 size={50} title='CSS3'/>
-              <BiLogoJavascript size={50} title='JavaScript'/>
-              <BiLogoBootstrap size={50} title='Bootstrap' />
-              <SiAxios size={50} title='Axios'/>
-              <SiExpress size={50} title='Express'/>
-              <BiLogoSpotify size={50} title='Spotify'/>
-              <SiRender size={50} title='Render'/>
-            </div>
-            <p>
-              A web application made using the Spotify API that allows users to log in
-              with their spotify premium account and look through the past 6 months of
-              data in a concise and sorted manner. Users shall be able to see their
-              genre pool and top artists and songs. It is currently awaiting quota
-              extension from Spotify.
-            </p>
-          </div>
-          <div className='projectImg' id='SW-Background' />
-        </a>
-        <a className='project' href='https://github.com/majocast/Sorting-Visualizer'>
-          <div className='projectImg' id='SV-Background' />
-          <div className='projectDesc'>
-            <h1>Sorting Visualizer</h1>
-            <div className='skills'>
-              <BiLogoHtml5 size={50} title='HTML5'/>
-              <BiLogoCss3 size={50} title='CSS3'/>
-              <BiLogoJavascript size={50} title='JavaScript'/>
-            </div>
-            <p>Sorting visualizer to display different sorting algorithms. Sorting Algorithms include 
-              bubble sort, quick sort, insertion sort, and heap sort, all of which are tasked to sort a
-              randomly generated array of a user given size. Color coordination of changing
-              values applies to elements to help display the algorithm in action.
-            </p>
-          </div>
-        </a>
         <a className='project' href='https://majocast.github.io/weather-app-react/'>
+          <div className='projectImg' id='WA-Background' />
           <div className='projectDesc'>
             <h1>Weather App</h1>
             <div className='skills'>
@@ -144,7 +133,6 @@ function Projects() {
               or rain, humidity, and wind speed. It also displays the resulting city from the search.
             </p>
           </div>
-          <div className='projectImg' id='WA-Background' />
         </a>
       </div>
     </Wrapper>
@@ -152,15 +140,3 @@ function Projects() {
 }
 
 export default Projects;
-
-/*<span>CrisisConnect</span>
-            <span>React</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>AWS</span>
-            <p>A industry-grade, Beta-level launch of a crisis alert web application that shall allow you 
-              to see Weather & Fire, Health, and Security updates uploaded directly by county officials. 
-              You can view and filter the map for updates across California, 
-              register/login to access capabilities to recieve personalized updates, and more.
-            </p>*/
